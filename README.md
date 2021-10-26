@@ -1,7 +1,6 @@
 open = ["[", "{", "("]
 close = ["]", "}", ")"]
 
-# Function to check parentheses
 def check(Str):
     stack = []
     for i in Str:
@@ -18,8 +17,7 @@ def check(Str):
         return "Balanced"
     else:
         return "Unbalanced"
-
-# Driver code
+        
 string = "{[]{()}}"
 print(string, "-", check(string))
 string = "[{}{})(]"
